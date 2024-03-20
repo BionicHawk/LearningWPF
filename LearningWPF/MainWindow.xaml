@@ -7,22 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid >
-        <TextBlock 
-            Name="tbHello"
-            Text="Hello world" 
-            FontSize="32"
-            TextWrapping="Wrap" 
-            HorizontalAlignment="Center"  
-        />
-        <Button 
-            Width="100"
-            Height="42"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Name="btnRun"
-            Click="btnRun_Click"
-        >
-            <TextBlock Text="Count"/>
-        </Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0" Fill="Red"/>
+        <Rectangle Grid.Row="1" Fill="Blue"/>
+        <Rectangle Grid.Row="2" Fill="Green"/>
     </Grid>
 </Window>
